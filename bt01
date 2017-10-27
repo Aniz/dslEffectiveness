@@ -12,7 +12,7 @@ add User
 	types Associado,Profissional,Estudante.
 	show Insert,Update,Search,Remove,ListAll.
 	
-	def User.sendBugTrackEmail 
+	def User -> sendBugTrackEmail 
 	
 add Organizer	
 	types ProgramChair,WorkshopChair,TutorialChair,ProceedingsChair,PanelChair.
@@ -20,7 +20,7 @@ add Organizer
 	
 add Reviewer
 	show Insert,Update,Search,Remove,ListAll.
-	def Reviewer.askCardInfo 
+	def Reviewer -> askCardInfo 
 	
 add Event
 	def Event.program 	
@@ -35,7 +35,7 @@ add Submission
 	types Completa,Parcial.	
 	show Search,Remove,ListAll.
 	
-	def Submission.insertAttachment 
+	def Submission -> insertAttachment 
 	
 add Speaker	
 	show Insert,Update,Search,Remove,ListAll.
